@@ -1,0 +1,46 @@
+<div class="content">
+    <div style="background-color:white; padding:7px;">
+        <h1>Sign Up</h1>
+        <!-- form -->
+        <form #loginForm="ngForm"  (ngSubmit)="onSubmit()">
+            <label>
+                First name:
+                <input type="text" required [(ngModel)]="user.firstname" name="firstname"/>
+            </label>
+
+            <label>
+                Last name:
+                <input type="text" required [(ngModel)]="user.lastname" name="lastname"/>
+            </label>
+
+            <label>
+                Address:
+                <input type="text" required [(ngModel)]="user.address" name="address"/>
+            </label>
+
+            <label>
+                Email
+                <input type="text" required [(ngModel)]="user.email" name="email"/>
+            </label>
+
+            <label>
+                Username
+                <input type="text" required [(ngModel)]="user.username" name="username"/>
+            </label>
+
+            <label>
+                Password
+                <input type="password" required [(ngModel)]="user.password" name="password"/>
+            </label>
+
+            <label>
+                (re)Password
+                <input type="password" required [(ngModel)]="password" name="repassword"/>
+            </label>
+
+            <label>
+                <button type="submit" [disabled]="formDisabled">Sign Up</button>
+            </label>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<ul id="menu">    
+    <!-- loop of menu items -->
+    <li *ngFor="let menuitem of menuitems">
+        <a class="link" href="/{{menuitem.page}}">
+            <i class="fas fa-home"></i>
+            <span>{{menuitem.label}}</span>
+        </a>
+    </li>
+</ul>

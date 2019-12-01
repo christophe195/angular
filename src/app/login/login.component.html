@@ -1,0 +1,19 @@
+<div class="content">
+        <div style="background-color:white;padding:7px;">
+                <!-- login form-->
+                <form #loginForm="ngForm"  (ngSubmit)="onSubmit()" >
+                        <h1>SignIn</h1>
+                        <label>
+                                Gebruikersnaam:
+                                <input type="text" required [(ngModel)]="model.username" name="username" />
+                        </label>
+                        <label>
+                                Wachtwoordt:
+                                <input type="password" required [(ngModel)]="model.password" name="password" />
+                        </label>
+                        <label>
+                                <button mdbBtn color="info"  block="true" type="submit" [disabled]="!loginForm.form.valid || submitted">Sign in</button>
+                        </label>
+                </form>     
+        </div>
+</div>

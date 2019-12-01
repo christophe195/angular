@@ -1,0 +1,10 @@
+<div class="user no_gsm">
+    <div class="avatar" *ngIf="islogedin">
+        <i class="fas fa-user"></i>
+    </div>
+    <div class="info" *ngIf="islogedin">
+        {{username}}
+        <br>
+        {{email}}
+    </div>
+</div>

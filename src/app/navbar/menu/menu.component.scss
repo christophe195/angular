@@ -1,0 +1,61 @@
+.grid {
+    grid-gap: 10px;
+}
+
+.tegel {
+    position: relative;
+    min-height: 80px;
+    padding: 7px;
+}
+
+.g5 .tegel:hover {opacity: 0.6;cursor: pointer;}
+
+.tegel .icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 80px;
+    background-color: #00000021;
+    font-size: 50px;
+    color: #ffffffe0;
+}
+
+.tegel .data {
+    text-align: right;
+    color: white;
+}
+
+.tegel h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 32px;
+}
+
+.tegel .icon i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timercontrole {
+    overflow: hidden;
+    display: block;
+    background-color: #8080801a;
+    border: 1px solid lightgray;
+    padding: 7px 3px;
+    position: relative;
+}
+
+.timercontrole span, .timercontrole i {position: relative;z-index: 1;}
+
+.timercontrole i {float:right;}
+
+.bg {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    background-color: #b1ff8c;
+}
